@@ -2,11 +2,11 @@ package twc.springframework.twcpetclinic.services.map;
 
 
 import twc.springframework.twcpetclinic.model.Vet;
-import twc.springframework.twcpetclinic.services.CrudService;
+import twc.springframework.twcpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
