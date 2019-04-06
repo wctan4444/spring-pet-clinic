@@ -1,10 +1,12 @@
 package twc.springframework.twcpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import twc.springframework.twcpetclinic.model.Pet;
 import twc.springframework.twcpetclinic.services.PetService;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

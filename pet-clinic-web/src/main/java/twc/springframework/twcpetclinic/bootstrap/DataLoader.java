@@ -6,20 +6,19 @@ import twc.springframework.twcpetclinic.model.Owner;
 import twc.springframework.twcpetclinic.model.Vet;
 import twc.springframework.twcpetclinic.services.OwnerService;
 import twc.springframework.twcpetclinic.services.VetService;
-import twc.springframework.twcpetclinic.services.map.OwnerServiceMap;
-import twc.springframework.twcpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
-    
-    
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+
+
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
 
     @Override
     public void run(String... args) throws Exception {
