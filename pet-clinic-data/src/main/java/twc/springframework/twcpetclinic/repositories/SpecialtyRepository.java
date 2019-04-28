@@ -1,7 +1,7 @@
 package twc.springframework.twcpetclinic.repositories;
 
 import org.springframework.data.repository.CrudRepository;
-import twc.springframework.twcpetclinic.model.PetType;
+import twc.springframework.twcpetclinic.model.Speciality;
 
-public interface SpecialtyRepository  extends CrudRepository<PetType, Long> {
+public interface SpecialtyRepository  extends CrudRepository<Speciality, Long> {
 }
